@@ -29,6 +29,13 @@ I am using patched Apple font which is: [SF Mono Ligaturized](https://github.com
 # Firefox
 [Aura Theme](https://github.com/daltonmenezes/aura-theme/tree/main/packages/firefox) for Firefox is available in [Firefox Addon Store](https://addons.mozilla.org/en-US/firefox/addon/aura-theme/).
 
+# Neovim
+[Aura Theme](https://github.com/daltonmenezes/aura-theme/tree/main/packages/neovim) for Neovim.
+I am using Ubuntu 20.x, so I needed to compile latest version of neovim from sources for it to work.
+
+![Neovim preview](pics/nvim-preview.png)
+
+
 ## Thanks to…
 - @[mathiasbynens](https://github.com/mathiasbynens) and his [dotfiles](https://github.com/mathiasbynens/dotfiles) repository..
 - @[thoughtbot](https://github.com/thoughtbot/) and theirs [dotfiles](https://github.com/thoughtbot/dotfiles) repository..
