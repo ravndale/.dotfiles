@@ -63,7 +63,7 @@ repo_information() {
 
     if git log -1 &>/dev/null; then;
         local hash=$(git log -1 --format=%H)
-        repo_last_commit="$hash"
+        repo_last_commit="${hash: -7}"
     else
         repo_last_commit="no history"
     fi
