@@ -1,20 +1,36 @@
--- ~/.config/nvim/init.lua
+-- Bootstrap lazy.nvim
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not (vim.uv or vim.loop).fs_stat(lazypath) then
+  local lazyrepo = "https://github.com/folke/lazy.nvim.git"
+  local out = vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath })
+  if vim.v.shell_error ~= 0 then
+    vim.api.nvim_echo({
+      { "Failed to clone lazy.nvim:\n", "ErrorMsg" },
+      { out, "WarningMsg" },
+      { "\nPress any key to exit..." },
+    }, true, {})
+    vim.fn.getchar()
+    os.exit(1)
+  end
+end
+vim.opt.rtp:prepend(lazypath)
 
--- Add Lazy Neovim to runtime path
-vim.opt.rtp:prepend(vim.fn.stdpath("data") .. "/site/pack/packer/start/lazy.nvim")
+-- Make sure to setup `mapleader` and `maplocalleader` before
+-- loading lazy.nvim so that mappings are correct.
+-- This is also a good place to setup other settings (vim.opt)
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
 
--- Define plugins and Lazy Neovim setup
+-- Setup lazy.nvim
 require("lazy").setup({
-    { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
-    {
-      "baliestri/aura-theme",
-      lazy = false,
-      priority = 1000,
-      config = function(plugin)
-        vim.opt.rtp:append(plugin.dir .. "/packages/neovim")
-        vim.cmd([[colorscheme aura-dark]])
-      end
-    }
+  {
+    "baliestri/aura-theme",
+    lazy = false,
+    priority = 1000,
+    config = function(plugin)
+      vim.opt.rtp:append(plugin.dir .. "/packages/neovim")
+      vim.cmd([[colorscheme aura-dark]])
+    end
+  }
 })
-
--- Additional Neovim settings and key mappings
+       
