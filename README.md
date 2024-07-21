@@ -1,7 +1,8 @@
 
 # Ravendale's dotfiles
 
-![Shell prompt](pics/term-preview.png)
+![Shell prompt preview](pics/term-preview.png)
+![VSCode prompt preview](pics/vscode-preview.png)
 
 ## Installation
 
