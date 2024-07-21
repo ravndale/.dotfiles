@@ -1,0 +1,24 @@
+
+# General UNIX
+alias ls="ls -lah --color=auto"
+alias ln="ln -v"
+alias mkdir="mkdir -p -v"
+alias e="$EDITOR"
+alias v="$VISUAL"
+alias path='echo $PATH | tr -s ":" "\n"'
+alias c='clear'
+alias df='df -h'
+alias du='du -h'
+alias mv='mv -iv'
+alias grep='grep --color'
+alias egrep='grep --color'
+
+# Ubuntu apt
+alias api='sudo apt install'
+alias apu='sudo apt update'
+alias apup='sudo apt upgrade'
+alias apr='sudo apt remove --purge'
+alias aptar='sudo apt autoremove --purge'
+
+# Neovim
+alias nv='nvim'

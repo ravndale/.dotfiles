@@ -1,0 +1,25 @@
+[user]
+	name = ravndale
+	email = xravndale@gmail.com
+
+[hub]
+    protocol = https
+
+[core]
+    excludesfile = $HOME/.dotfiles/git/gitignore
+    editor = vim
+
+[apply]
+    whitespace = nowarn
+
+[difftool]
+    prompt = false
+
+[help]
+    autocorrect = 1
+
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    ui = true

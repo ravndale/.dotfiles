@@ -1,0 +1,12 @@
+
+# No arguments: `git status`
+# With arguments: acts like `git`
+## https://github.com/thoughtbot/dotfiles/blob/main/zsh/functions/g
+
+g() {
+  if [[ $# -gt 0 ]]; then
+    git "$@"
+  else
+    git status
+  fi
+}

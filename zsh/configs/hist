@@ -1,0 +1,9 @@
+
+HISTFILE=$HOME/.cache/.zhistory
+
+HIST_IGNORE_ALL_DUPS="true"
+APPEND_HISTORY="true"
+HIST_STAMPS="dd/mm/yyyy"
+
+HISTSIZE=4096
+SAVEHIST=4096

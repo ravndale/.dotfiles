@@ -1,0 +1,4 @@
+
+export LANG="en_US.UTF-8"
+export MANPATH="/usr/local/man:$MANPATH"
+export PATH="$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH"

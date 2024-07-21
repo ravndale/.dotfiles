@@ -1,0 +1,7 @@
+
+# Generates random password using openssl
+## https://github.com/joshukraine/dotfiles/blob/master/zsh/.config/zsh/functions.zsh
+
+function randpw() {
+  openssl rand -base64 4 | md5 | head -c$1 ; echo
+}
