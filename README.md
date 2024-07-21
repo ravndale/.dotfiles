@@ -35,6 +35,19 @@ I am using Ubuntu 20.x, so I needed to compile latest version of neovim from sou
 
 ![Neovim preview](pics/nvim-preview.png)
 
+# GDM
+For GNOME Desktop Manager I am using [WhiteSur-gtk-theme](https://github.com/vinceliuice/WhiteSur-gtk-theme) with Ventura Dark background with added gradient matching Aura Theme color scheme.
+
+![Wallpaper preview](wallpapers/13-Ventura-Dark.jpg)
+
+# GTK4
+Main GTK theme is [Aura-GTK](https://www.gnome-look.org/p/1898573).
+
+# Cursors & icons
+Theme for cursors is: [WhiteSur-cursors](https://www.gnome-look.org/p/1411743);
+for icons: [McMojave-circle-purple dark](https://www.gnome-look.org/p/1305429) theme.
+
+![GTK preview](pics/gtk-preview.png)
 
 ## Thanks to…
 - @[mathiasbynens](https://github.com/mathiasbynens) and his [dotfiles](https://github.com/mathiasbynens/dotfiles) repository..
