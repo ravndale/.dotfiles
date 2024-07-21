@@ -1,5 +1,6 @@
 {
     "workbench.colorTheme": "Aura Dark (Soft Text)",
     "workbench.iconTheme": "icons",
-    "workbench.productIconTheme": "fluent-icons"
+    "workbench.productIconTheme": "fluent-icons",
+    "git.autofetch": true
 }
